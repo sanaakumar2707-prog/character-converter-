@@ -1,14 +1,20 @@
-//
-//  main.c
-//  character
-//
-//  Created by Sanaa Kumar on 17/08/25.
-//
-
-#include <stdio.h>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+// conversion from uppercase to lower case
+#include<stdio.h>
+int main (void)
+{
+    char x;
+    printf("Enter the character=");
+    scanf("%c",&x);
+    if (x >='A'&& x<='Z'){
+        x=x+32;
+        printf("New=%c\n",x);
+    }
+    else if(x>='a' && x<='z'){
+        x=x-32;
+        printf("new=%c\n",x);
+    }
+    else{
+        printf("not an alphabet please enter an alphabet ");
+    }
     return 0;
 }
